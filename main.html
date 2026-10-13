@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form method="Post">
+    <!-- Name  -->
+    <lable>Name</lable>
+    <input id="name" type="text" required="yes" placeholder="Name"><br>
+    <!-- Email  -->
+     <lable>Email</lable>
+     <input id="email" type="Email" placeholder="Email" required="yes"><br>
+    <!-- Gender  -->
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br>
+    <!-- Car  -->
+    <label>Please Choose an Option</label>
+     <select id="multiselect" type="select">
+            <option>Maruti</option>
+            <option>Hundai</option>
+            <option>Skoda</option>
+        </select><br><br>
+    <!-- Brands  -->
+    <!-- Age  -->
+     <label>Age</label>
+     <input type="number" required="yes" id="age" placeholder="Age"><br>
+    <!-- DOB -->
+     <label>DOB</label>
+     <input type="date" required="yes" id="dob" placeholder="DOB"><br>
+    <!-- Phone Number  -->
+    <label>Phone Number</label>
+    <input type="Tel" required="yes" id="Tel" placeholder="XXX-XXX-XXXX"><br>
+    <!-- Password  -->
+     <label>Password</label>
+     <input type="password" required="yes" id="password" placeholder="Password"><br>
+     <label>I agree to the TOS</label>
+     <input type="checkbox" required="yes" id="tos"><br>
+     <button type="Submit">Submit</button>
+     </form>
 
 </body>
-
 </html>
